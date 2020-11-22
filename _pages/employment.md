@@ -5,7 +5,7 @@ title: "Work Experience"
 author_profile: true
 ---
 
-- Research Intern at Rakuten USA, 09/2020-12/2020(Expected)
+- Research Intern at Rakuten USA, 09/2020-12/2020
   - Focus on developing new recommender system with cold start item.
   - Explore shared network structure and different attention mechanisms to improve the performance of item cold start recommender system.
 - Research Assistant at Laboratory of Machine Learning & Health Informatics, UCONN 01/2016-present
