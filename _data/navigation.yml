@@ -4,10 +4,10 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Work Experience"
     url: /workexperience/
-  - title: "Publications"
-    url: /publications/
   - title: "Projects"
     url: /projects/
+    - title: "Publications"
+    url: /publications/
   - title: "Teaching"
     url: /teaching/
   - title: "CV"
