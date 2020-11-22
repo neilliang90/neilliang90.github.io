@@ -12,4 +12,7 @@ I am a PhD student in the [Department of Computer Science and Engineering](https
 
 * (Oct 2020) Invited to serve as a reviewer for AAAI 2021
 
+## Contact
+Email: guannan.liang AT uconn.edu
+
 
