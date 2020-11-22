@@ -97,7 +97,6 @@ author:
   avatar           : "/assets/images/selfie.jpg"
   bio              : "PhD candidcate interested in machine learning"
   location         : "Storrs, CT, USA"
-  email            :  guannan.liang@uconn.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
