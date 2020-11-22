@@ -6,7 +6,7 @@ main:
     url: /workexperience/
   - title: "Projects"
     url: /projects/
-    - title: "Publications"
+  - title: "Publications"
     url: /publications/
   - title: "Teaching"
     url: /teaching/
