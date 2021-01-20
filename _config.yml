@@ -126,7 +126,7 @@ author:
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?hl=en&user=bmj48jcAAAAJ"
     - label: "leetcode"
-      icon: "fas fa-fw fa-leetcode"
+      icon: "fas fa-fw fa-link"
       url: "https://leetcode.com/neilliang/"      
 
 # Site Footer
