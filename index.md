@@ -12,7 +12,7 @@ I obtained my Ph.D. degree in the [Department of Computer Science and Engineerin
 ## News
 * (May 2021)  Reviewer for NeurIPS 2021
 
-* (May 2021)  Volunteers for ICLR 2021
+* (May 2021)  Volunteer for ICLR 2021
 
 * (April 2021)  Technical Presentation at School of Artificial Intelligence, Jilin University, China
 
