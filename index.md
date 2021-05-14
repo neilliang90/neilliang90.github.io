@@ -10,6 +10,8 @@ I obtained my Ph.D. degree in the [Department of Computer Science and Engineerin
 ![Research areas](/assets/images/Picture1.png)
 
 ## News
+* (May 2021)  Reviewer for ACM Transactions on Intelligent Systems and Technology
+* 
 * (May 2021)  Reviewer for NeurIPS 2021
 
 * (May 2021)  Volunteer for ICLR 2021
