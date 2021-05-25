@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Guannan Liang"
   avatar           : "/assets/images/selfie.jpg"
-  bio              : "PhD candidcate interested in machine learning"
+  bio              : "I am interested in machine learning and stochastic optimization"
   location         : "Storrs, CT, USA"
   links:
     - label: "Email"
