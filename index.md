@@ -10,6 +10,8 @@ I am a research scientist in Rakuten Institute of Technology at Rakuten, USA and
 ![Research areas](/assets/images/Picture1.png)
 
 ## News
+* (Oct 2021) Invited to serve as a PC for IJCAI 2022
+
 * (Sep 2021) Reviewer for ICLR 2022
 
 * (Aug 2021) One paper is accepted by RecSys 2021
