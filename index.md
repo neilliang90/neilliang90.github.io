@@ -32,6 +32,9 @@ I am a research scientist in Rakuten Institute of Technology at Rakuten, USA and
 
 * (Oct 2020) Invited to serve as a reviewer for AAAI 2021
 
+## Courses
+* (Oct 2021 - Now) I am studying Reinforcement Learning via [Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures)
+
 ## Contact
 Email: guannan.liang AT uconn.edu
 
