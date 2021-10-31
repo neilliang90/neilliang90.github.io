@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)https://yanjin.space/ -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Jin Yan</title>
+    
+    <meta name="author" content="Jin Yan">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="./../Blog_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./../Blog_files/jupyter.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="https://yanjin.space/">Jin Yan</a>
+          <ul class="nav">
+
+        <li><a href="https://yanjin.space/publications/">Publications</a></li>
+        
+        <li><a href="https://yanjin.space/research/">Research</a></li>
+
+        <li><a href="https://yanjin.space/courses/">Courses</a></li>
+
+        <li><a href="https://yanjin.space/blog/">Blog</a></li>
+
+        <li><a href="https://yanjin.space/resources/">Resources</a></li>           
+      
+          </ul>
+        </div>
+      </div>
+    </div>
+<body>
+  <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Machine-Learning-Questions">Machine Learning Questions<a class="anchor-link" href="#Machine-Learning-Questions">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color='red'>This is a document that I collect some ML problems frequently asked in the interview, answers are collected online.</font></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Supervised-Learning-vs-Unsupervised-Learning">*Supervised Learning vs Unsupervised Learning<a class="anchor-link" href="#*Supervised-Learning-vs-Unsupervised-Learning">&#182;</a></h3><p><code>Supervised Learning</code>: In supervised machine learning, a model makes predictions or decisions based on past or labeled data. Labeled data refers to sets of data that are given tags or labels, and thus made more meaningful.</p>
+<p>Applications of supervised machine learning include: 1).Email Spam Detection: Here we train the model using historical data that consists of emails categorized as spam or not spam. This labeled information is fed as input to the model. 2) Healthcare Diagnosis: By providing images regarding a disease, a model can be trained to detect if a person is suffering from the disease or not. 3) Sentiment Analysis: This refers to the process of using algorithms to mine documents and determine whether they’re positive, neutral, or negative in sentiment. 4) Fraud Detection: Training the model to identify suspicious patterns, we can detect instances of possible fraud.</p>
+<p><code>Unsupervised Learning</code>: In unsupervised learning, we don't have labeled data. A model can identify patterns, anomalies, and relationships in the input data.</p>
+<p>There are two techniques used in unsupervised learning: clustering and association. Clustering problems involve data to be divided into subsets. These subsets, also called clusters, contain data that are similar to each other. Different clusters reveal different details about the objects, unlike classification or regression. In an association problem, we identify patterns of associations between different variables or items. For example, an ecommerce website can suggest other items for you to buy, based on the prior purchases that you have made, spending habits, items in your wishlist, other customers’ purchase habits, and so on.</p>
+<p>(<code>Semi-supervised Learning</code>: In the case of semi-supervised learning, the training data contains a small amount of labeled data and a large amount of unlabeled data.)</p>
+<p>(<code>Reinforcement Learning</code>: Using reinforcement learning, the model can learn based on the rewards it received for its previous action.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*How-will-you-handle-missing-values-in-data?">*How will you handle missing values in data?<a class="anchor-link" href="#*How-will-you-handle-missing-values-in-data?">&#182;</a></h3><p>There are several ways to handle missing values in the given data-</p>
+<ol>
+<li>Dropping the values</li>
+<li>Deleting the observation (not always recommended).</li>
+<li>Replacing value with the mean, median and mode of the observation.</li>
+<li>Predicting value with regression</li>
+<li>Finding appropriate value with clustering</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*How-to-handle-imbalanced-data-in-Machine-Learning?">*How to handle imbalanced data in Machine Learning?<a class="anchor-link" href="#*How-to-handle-imbalanced-data-in-Machine-Learning?">&#182;</a></h3><p><code>Imbalanced data</code> typically refers to a problem with classification problems where the classes are not represented equally. For example, you may have a 2-class (binary) classification problem with 100 instances (rows). A total of 80 instances are labeled with Class-1 and the remaining 20 instances are labeled with Class-2. This is an imbalanced dataset and the ratio of Class-1 to Class-2 instances is 80:20 or more concisely 4:1.</p>
+<ol>
+<li>Collect More Data</li>
+<li>Try Changing Your Performance Metric</li>
+<li>Try Resampling Your Dataset</li>
+<li>Try Generate Synthetic Samples: generate synthetic samples is to randomly sample the attributes from instances in the minority class.</li>
+<li>Try Different Algorithms: spot-checking a variety of different types of algorithms on a given problem.</li>
+<li>Try Penalized Models: Penalized classification imposes an additional cost on the model for making classification mistakes on the minority class during training. These penalties can bias the model to pay more attention to the minority class.</li>
+</ol>
+<p>"Decompose your larger class into smaller number of other classes…</p>
+<p>…use a One Class Classifier… (e.g. treat like outlier detection)</p>
+<p>…resampling the unbalanced training set into not one balanced set, but several. Running an ensemble of classifiers on these sets could produce a much better result than one classifier alone"</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-&quot;One-Hot-Encoding&quot;?-Why-and-when-do-you-have-to-use-it?">*What is "One Hot Encoding"? Why and when do you have to use it?<a class="anchor-link" href="#*What-is-&quot;One-Hot-Encoding&quot;?-Why-and-when-do-you-have-to-use-it?">&#182;</a></h3><p>One Hot encoding converts categorical data into an integer representation.</p>
+<ol>
+<li>Categorical data is defined as variables with a finite set of label values.</li>
+<li>Most machine learning algorithms require numerical input and output variables.</li>
+<li>An integer and one hot encoding is used to convert categorical data to integer data.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-&#8216;training-set&#8217;-and-&#8216;test-set&#8217;-in-a-Machine-Learning?-How-much-data-will-you-allocate-for-your-training,-validation,-and-test?">*What is &#8216;training set&#8217; and &#8216;test set&#8217; in a Machine Learning? How much data will you allocate for your training, validation, and test?<a class="anchor-link" href="#*What-is-&#8216;training-set&#8217;-and-&#8216;test-set&#8217;-in-a-Machine-Learning?-How-much-data-will-you-allocate-for-your-training,-validation,-and-test?">&#182;</a></h3><p>The training set is examples given to the model to analyze and learn, 70% of the total data is typically taken as the training dataset. This is labeled data used to train the model
+The test set is used to test the accuracy of the hypothesis generated by the model. Remaining 30% is taken as testing dataset. We test without labeled data and then verify results with labels</p>
+<p>Regarding the question of how to split the data into a training set and test set, there is no fixed rule, and the ratio can vary based on individual preferences.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-the-difference-between-a-generative-and-a-discriminative-model?">*What is the difference between a generative and a discriminative model?<a class="anchor-link" href="#*What-is-the-difference-between-a-generative-and-a-discriminative-model?">&#182;</a></h3><p>Generative and Discriminative methods are two-broad approaches:
+– former involve modeling, latter directly solve classification</p>
+<p>Discriminative models directly learn the conditional predictive distribution p(y|x).Generative models learn the joint distribution p(x,y) (or rather, p(x|y) and p(y)). Predictive distribution p(y|x) can be obtained with Bayes' rule.</p>
+<p>A broader and more fundamental definition fitting for this general question:Discriminative models learn the boundary between classes. Discriminate between different kinds of data instances. Generative models learn the distribution of data. Generate new data instances.</p>
+<p><img src="https://i.stack.imgur.com/mipQS.png" width="500"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-overfitting,-and-how-can-you-avoid-It?">*What is overfitting, and how can you avoid It?<a class="anchor-link" href="#*What-is-overfitting,-and-how-can-you-avoid-It?">&#182;</a></h3><p>Overfitting is a situation that occurs when a model learns the training set too well, taking up random fluctuations in the training data as concepts. These impact the model’s ability to generalize and don’t apply to new data.</p>
+<p>When a model is given the training data, it shows 100 percent accuracy—technically a slight loss. But, when we use the test data, there may be an error and low efficiency. This condition is known as overfitting.</p>
+<p>There are multiple ways of avoiding overfitting, such as:</p>
+<p>Regularization. It involves a cost term for the features involved with the objective function
+Making a simple model. With lesser variables and parameters, the variance can be reduced 
+Cross-validation methods like k-folds can also be used
+If some model parameters are likely to cause overfitting, techniques for regularization like LASSO can be used that penalize these parameters</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*List-of-Classification-Model">*List of Classification Model<a class="anchor-link" href="#*List-of-Classification-Model">&#182;</a></h3><ol>
+<li><p><code>Logistic Regression</code></p>
+<p>Definition: Logistic regression is a machine learning algorithm for classification. In this algorithm, the probabilities describing the possible outcomes of a single trial are modelled using a logistic function.</p>
+<p>Advantages: Logistic regression is designed for this purpose (classification), and is most useful for understanding the influence of several independent variables on a single outcome variable.</p>
+<p>Disadvantages: Works only when the predicted variable is binary, assumes all predictors are independent of each other, and assumes data is free of missing values.</p>
+</li>
+</ol>
+<ol>
+<li><p><code>Naïve Bayes</code></p>
+<p>Definition: Naive Bayes algorithm based on Bayes’ theorem with the assumption of independence between every pair of features. Naive Bayes classifiers work well in many real-world situations such as document classification and spam filtering.</p>
+<p>Advantages: This algorithm requires a small amount of training data to estimate the necessary parameters. Naive Bayes classifiers are extremely fast compared to more sophisticated methods.</p>
+<p>Disadvantages: Naive Bayes is is known to be a bad estimator.</p>
+</li>
+</ol>
+<ol>
+<li><p><code>Stochastic Gradient Descent</code></p>
+<p>Definition: Stochastic gradient descent is a simple and very efficient approach to fit linear models. It is particularly useful when the number of samples is very large. It supports different loss functions and penalties for classification.</p>
+<p>Advantages: Efficiency and ease of implementation.</p>
+<p>Disadvantages: Requires a number of hyper-parameters and it is sensitive to feature scaling.</p>
+</li>
+</ol>
+<ol>
+<li><p><code>K-Nearest Neighbours</code></p>
+<p>Definition: Neighbours based classification is a type of lazy learning as it does not attempt to construct a general internal model, but simply stores instances of the training data. Classification is computed from a simple majority vote of the k nearest neighbours of each point.</p>
+<p>Advantages: This algorithm is simple to implement, robust to noisy training data, and effective if training data is large.</p>
+<p>Disadvantages: Need to determine the value of K and the computation cost is high as it needs to computer the distance of each instance to all the training samples.</p>
+</li>
+</ol>
+<ol>
+<li><p><code>Decision Tree</code></p>
+<p>Definition: Given a data of attributes together with its classes, a decision tree produces a sequence of rules that can be used to classify the data.</p>
+<p>Advantages: Decision Tree is simple to understand and visualise, requires little data preparation, and can handle both numerical and categorical data.</p>
+<p>Disadvantages: Decision tree can create complex trees that do not generalise well, and decision trees can be unstable because small variations in the data might result in a completely different tree being generated.</p>
+</li>
+</ol>
+<ol>
+<li><p><code>Random Forest</code></p>
+<p>Definition: Random forest classifier is a meta-estimator that fits a number of decision trees on various sub-samples of datasets and uses average to improve the predictive accuracy of the model and controls over-fitting. The sub-sample size is always the same as the original input sample size but the samples are drawn with replacement.</p>
+<p>Advantages: Reduction in over-fitting and random forest classifier is more accurate than decision trees in most cases.</p>
+<p>Disadvantages: Slow real time prediction, difficult to implement, and complex algorithm.</p>
+</li>
+</ol>
+<ol>
+<li><p><code>Support Vector Machine</code></p>
+<p>Definition: Support vector machine is a representation of the training data as points in space separated into categories by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall.</p>
+<p>Advantages: Effective in high dimensional spaces and uses a subset of training points in the decision function so it is also memory efficient.</p>
+<p>Disadvantages: The algorithm does not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation.</p>
+</li>
+</ol>
+<p><img src="https://analyticsindiamag.com/7-types-classification-algorithms/screen-shot-2018-01-19-at-11-01-28-am/" width="300"></p>
+<h4 id="Question:-How-Will-You-Know-Which-Machine-Learning-Algorithm-to-Choose-for-Your-Classification-Problem?">Question: How Will You Know Which Machine Learning Algorithm to Choose for Your Classification Problem?<a class="anchor-link" href="#Question:-How-Will-You-Know-Which-Machine-Learning-Algorithm-to-Choose-for-Your-Classification-Problem?">&#182;</a></h4><p>While there is no fixed rule to choose an algorithm for a classification problem, you can follow these guidelines:</p>
+<ol>
+<li>If accuracy is a concern, test different algorithms and cross-validate them</li>
+<li>If the training dataset is small, use models that have low variance and high bias</li>
+<li>If the training dataset is large, use models that have high variance and little bias</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Multiclass-classification">*Multiclass classification<a class="anchor-link" href="#*Multiclass-classification">&#182;</a></h3><p>One vs all approach takes one class as positive and rest all as negative and trains the classifier. So for the data having n-classes it trains n classifiers. Now in the classification phase the n-classifier predicts probability of particular class and class with highest probability is selected.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Advantages-and-disadvantages-of-Principal-Component-Analysis-in-Machine-Learning">*Advantages and disadvantages of Principal Component Analysis in Machine Learning<a class="anchor-link" href="#*Advantages-and-disadvantages-of-Principal-Component-Analysis-in-Machine-Learning">&#182;</a></h3><p>Principal Component Analysis (PCA) is a statistical techniques used to reduce the dimensionality of the data (reduce the number of features in the dataset) by selecting the most important features that capture maximum information about the dataset. 
+Advantages of Principal Component Analysis</p>
+<ol>
+<li><p>Removes Correlated Features.</p>
+</li>
+<li><p>Improves Algorithm Performance.</p>
+</li>
+<li><p>Reduces Overfitting.</p>
+</li>
+<li><p>Improves Visualization.</p>
+</li>
+</ol>
+<p>Disadvantages of Principal Component Analysis</p>
+<ol>
+<li><p>Independent variables become less interpretable: After implementing PCA on the dataset, your original features will turn into Principal Components. Principal Components are the linear combination of your original features. Principal Components are not as readable and interpretable as original features.</p>
+</li>
+<li><p>Data standardization is must before PCA: You must standardize your data before implementing PCA, otherwise PCA will not be able to find the optimal Principal Components. Use StandardScaler from Scikit Learn to standardize the dataset features onto unit scale (mean = 0 and standard deviation = 1) which is a requirement for the optimal performance of many Machine Learning algorithms.</p>
+</li>
+<li><p>Information Loss: Although Principal Components try to cover maximum variance among the features in a dataset, if we don't select the number of Principal Components with care, it may miss some information as compared to the original list of features.</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-LDA:-Linear-Discriminant-Analysis?">*What is LDA: Linear Discriminant Analysis?<a class="anchor-link" href="#*What-is-LDA:-Linear-Discriminant-Analysis?">&#182;</a></h3><p>The general LDA approach is very similar to a Principal Component Analysis, but in addition to finding the component axes that maximize the variance of our data (PCA), we are additionally interested in the axes that maximize the separation between multiple classes (LDA).</p>
+<h4 id="Question:-PCA-vs.-LDA?">Question: PCA vs. LDA?<a class="anchor-link" href="#Question:-PCA-vs.-LDA?">&#182;</a></h4><p>Both Linear Discriminant Analysis (LDA) and Principal Component Analysis (PCA) are linear transformation techniques that are commonly used for dimensionality reduction. PCA can be described as an “unsupervised” algorithm, since it “ignores” class labels and its goal is to find the directions (the so-called principal components) that maximize the variance in a dataset. In contrast to PCA, LDA is “supervised” and computes the directions (“linear discriminants”) that will represent the axes that that maximize the separation between multiple classes.</p>
+<p><img src="https://sebastianraschka.com/images/blog/2014/linear-discriminant-analysis/lda_1.png" width="500"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-Naive-Bayes?">*What is Naive Bayes?<a class="anchor-link" href="#*What-is-Naive-Bayes?">&#182;</a></h3><p>Naive Bayes is a machine learning implementation of Bayes Theorem.  It is a classification algorithm that predicts the probability of each data point belonging to a class and then classifies the point as the class with the highest probability.</p>
+<h4 id="*Question:-Why-is-Naive-Bayes-naive?">*Question: Why is Naive Bayes naive?<a class="anchor-link" href="#*Question:-Why-is-Naive-Bayes-naive?">&#182;</a></h4><p>It is naive because while it uses conditional probability to make classifications, the algorithm simply assumes that all features of a class are independent.  This is considered naive because, in reality, it is not often the case.  The upside is that the math is simpler, the classifier runs quicker, and the results are often quite good for certain problems.</p>
+<h4 id="*Bayes&#8217;-Theorem-Review">*Bayes&#8217; Theorem Review<a class="anchor-link" href="#*Bayes&#8217;-Theorem-Review">&#182;</a></h4><p>Bayes’ Theorem gives us the probability of an event actually happening by combining the conditional probability given some result and the prior knowledge of an event happening.</p>
+<p>Conditional probability is the probability that something will happen, given that something has a occurred.  In other words, the conditional probability is the probability of X given a test result or P(X|Test).  For example, what is the probability an e-mail is spam given that my spam filter classified it as spam.</p>
+<p>The prior probability is based on previous experience or the percentage of previous samples.  For example, what is the probability that any email is spam.</p>
+<p>$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$</p>
+<p>P(A|B) = Posterior probabilty = Probability of A given B happened</p>
+<p>P(B|A) = Conditional probaility = Probability of B happening if A is true</p>
+<p>P(A) = Prior probability = Probability of A happening in general</p>
+<p>P(B) = Evidence probability = Probability of getting a positive test</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Gradient-Descent">*Gradient Descent<a class="anchor-link" href="#*Gradient-Descent">&#182;</a></h3><p>Gradient descent is an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, we use gradient descent to update the parameters of our model. Parameters refer to coefficients in Linear Regression and weights in neural networks.</p>
+<h4 id="Question:-What-does-Gradient-Descent-mean-in-the-name-of-Gradient-Boosting-Machines-(GBM)?">Question: What does Gradient Descent mean in the name of Gradient Boosting Machines (GBM)?<a class="anchor-link" href="#Question:-What-does-Gradient-Descent-mean-in-the-name-of-Gradient-Boosting-Machines-(GBM)?">&#182;</a></h4><p>GBMs build an ensemble of shallow and weak successive trees with each tree learning and improving on the previous. When combined, these many weak successive trees produce a powerful “committee” that are often hard to beat with other algorithms. Many algorithms, including decision trees, focus on minimizing the residuals and, therefore, emphasize the MSE loss function. Gradient boosting allows one to optimise a user specified cost function, instead of a loss function that usually offers less control and does not essentially correspond with real world applications. Gradient boosting is considered a gradient descent algorithm. Gradient descent is a very generic optimization algorithm capable of finding optimal solutions to a wide range of problems. The general idea of gradient descent is to tweak parameters iteratively in order to minimize a cost function. It measures the local gradient of the loss (cost) function for a given set of parameters (Θ) and takes steps in the direction of the descending gradient. Once the gradient is zero, we have reached the minimum.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Decision-Tree-&amp;-Random-Forest">*Decision Tree &amp; Random Forest<a class="anchor-link" href="#*Decision-Tree-&amp;-Random-Forest">&#182;</a></h3><h4 id="Decision-Tree">Decision Tree<a class="anchor-link" href="#Decision-Tree">&#182;</a></h4><p>Decision tree is a supervised machine learning algorithm mainly used for the Regression and Classification.It breaks down a data set into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. The final result is a tree with decision nodes and leaf nodes. Decision tree can handle both categorical and numerical data.</p>
+<p>In Decision Tree the major challenge is to identification of the attribute for the root node in each level. This process is known as attribute selection. We have two popular attribute selection measures:</p>
+<ol>
+<li><p><code>Gini Index</code>: measure how often a randomly chosen element from the set would be incorrectly labeled. It means an attribute with lower Gini index should be preferred.</p>
+</li>
+<li><p><code>Information Gain</code>: when we use a node in a decision tree to partition the training instances into smaller subsets the entropy changes. Information gain is a measure of this change in entropy. Information_Gain = Entropy_before- Entropy_after.
+<code>Entropy</code>: is the measure of uncertainty of a random variable, it characterizes the impurity of an arbitrary collection of examples. The higher the entropy more the information content.</p>
+</li>
+</ol>
+<p><code>ID3</code>: This algorithm uses Information Gain to decide which attribute is to be used classify the current subset of the data. For each level of the tree, information gain is calculated for the remaining data recursively.</p>
+<h4 id="Question:-What-Is-Pruning-in-Decision-Trees,-and-How-Is-It-done?">Question: What Is Pruning in Decision Trees, and How Is It done?<a class="anchor-link" href="#Question:-What-Is-Pruning-in-Decision-Trees,-and-How-Is-It-done?">&#182;</a></h4><p>Pruning is a technique in machine learning that reduces the size of decision trees. It reduces the complexity of the final classifier, and hence improves predictive accuracy by the reduction of overfitting.</p>
+<p>Pruning can occur in: Top-down fashion. It will traverse nodes and trim subtrees starting at the root
+Bottom-up fashion. It will begin at the leaf nodes. There is a popular pruning algorithm called reduced error pruning, in which: Starting at the leaves, each node is replaced with its most popular class. If the prediction accuracy is not affected, the change is kept. There is an advantage of simplicity and speed.</p>
+<h4 id="Random-Forest">Random Forest<a class="anchor-link" href="#Random-Forest">&#182;</a></h4><p>The random forest is a model made up of many decision trees. Rather than just simply averaging the prediction of trees (which we could call a “forest”), this model uses two key concepts that gives it the name random:</p>
+<ol>
+<li>Random sampling of training data points when building trees: The samples are drawn with replacement, known as bootstrapping, which means that some samples will be used multiple times in a single tree. </li>
+<li>Random subsets of features considered when splitting nodes: Generally this is set to sqrt(n_features) for classification</li>
+</ol>
+<h4 id="Question:-Why-use-Random-Forest-Algorithm?">Question: Why use Random Forest Algorithm?<a class="anchor-link" href="#Question:-Why-use-Random-Forest-Algorithm?">&#182;</a></h4><ol>
+<li>It can be used for both classifications and regression task.</li>
+<li>It provides higher accuracy.</li>
+<li>Random forest classifier will handle the missing values and maintain the accuracy of a large proportion of data.</li>
+<li>If there are more trees, it won’t allow overfitting trees in the model.</li>
+<li>It has the power to handle a large data set with higher dimensionality</li>
+</ol>
+<h4 id="Question:-Why-does-a-decision-tree-have-low-bias-&amp;-high-variance?">Question: Why does a decision tree have low bias &amp; high variance?<a class="anchor-link" href="#Question:-Why-does-a-decision-tree-have-low-bias-&amp;-high-variance?">&#182;</a></h4><p>A complicated decision tree (e.g. deep) has low bias and high variance. The bias-variance tradeoff does depend on the depth of the tree.The tree makes almost no assumptions about target function but it is highly susceptible to variance in data.</p>
+<p>There are ensemble algorithms, such as bootstrapping aggregation and random forest, which aim to reduce variance at the small cost of bias in decision tree.</p>
+<h4 id="Question:-How-does-random-forest-reduce-variance?">Question: How does random forest reduce variance?<a class="anchor-link" href="#Question:-How-does-random-forest-reduce-variance?">&#182;</a></h4><p>One way Random Forests reduce variance is by training on different samples of the data. A second way is by using a random subset of features.</p>
+<p><a href="https://www.analyticsvidhya.com/blog/2017/09/30-questions-test-tree-based-models/">Questions to test a data scientist on Tree Based Models</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-are-the-main-differences-between-K-means-and-K-nearest-neighbours?">*What are the main differences between K-means and K-nearest neighbours?<a class="anchor-link" href="#*What-are-the-main-differences-between-K-means-and-K-nearest-neighbours?">&#182;</a></h3><p><code>K-means</code> is a clustering algorithm that tries to partition a set of points into K sets (clusters) such that the points in each cluster tend to be near each other. It is unsupervised because the points have no external classification.</p>
+<p><code>KNN</code> is a classification (or regression) algorithm that in order to determine the classification of a point, combines the classification of the K nearest points. It is supervised because you are trying to classify a point based on the known classification of other points.</p>
+<h4 id="Question:-What-is-the-difference-between-K-means-and-KNN?">Question: What is the difference between K-means and KNN?<a class="anchor-link" href="#Question:-What-is-the-difference-between-K-means-and-KNN?">&#182;</a></h4><ol>
+<li>K-NN is a Supervised machine learning while K-means is an unsupervised machine learning.</li>
+<li>K-NN is a classification or regression machine learning algorithm while K-means is a clustering machine learning algorithm.</li>
+<li>K-NN is a lazy learner while K-Means is an eager learner. An eager learner has a model fitting that means a training step but a lazy learner does not have a training phase.</li>
+<li>K-NN performs much better if all of the data have the same scale but this is not true for K-means.</li>
+</ol>
+<h4 id="Question:-How-to-optimize-the-result-of-K-means?">Question: How to optimize the result of K means?<a class="anchor-link" href="#Question:-How-to-optimize-the-result-of-K-means?">&#182;</a></h4><ol>
+<li>visualize your data and the clustering results (PCA, so you see the outliers).</li>
+<li>Start with a smaller sample. Sample them at random and test multiple starting points.</li>
+<li>Use other clustering algorithms than k-means.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-support-vector-machine-(SVM)?">*What is support vector machine (SVM)?<a class="anchor-link" href="#*What-is-support-vector-machine-(SVM)?">&#182;</a></h3><p>SVM stands for support vector machine, it is a supervised machine learning algorithm which can be used for both Regression and Classification. If you have n features in your training data set, SVM tries to plot it in n-dimensional space with the value of each feature being the value of a particular coordinate. SVM uses hyper planes to separate out different classes based on the provided kernel function. The SVM finds the maximum margin separating hyperplane.</p>
+<p><img src="https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/images/svm/margin.png" width="300"></p>
+<h4 id="Question:-What-is-the-best-separating-hyperplane?">Question: What is the best separating hyperplane?<a class="anchor-link" href="#Question:-What-is-the-best-separating-hyperplane?">&#182;</a></h4><p>The one that maximizes the distance to the closest data points from both classes. We say it is the hyperplane with maximum margin.</p>
+<h4 id="Question:-What-are-margin,-support-vectors-in-SVM?">Question: What are margin, support vectors in SVM?<a class="anchor-link" href="#Question:-What-are-margin,-support-vectors-in-SVM?">&#182;</a></h4><p>Maximum margin: the maximum distance between data points of both classes.
+Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane. Using these support vectors, we maximize the margin of the classifier.</p>
+<h4 id="Question:-What-are-the-different-kernels-functions-in-SVM-?">Question: What are the different kernels functions in SVM ?<a class="anchor-link" href="#Question:-What-are-the-different-kernels-functions-in-SVM-?">&#182;</a></h4><p>The function of kernel is to take data as input and transform it into the required form. For example linear, nonlinear, polynomial, radial basis function (RBF), and sigmoid. The kernel functions return the inner product between two points in a suitable feature space.</p>
+<h4 id="Question:-Hard-and-soft-margin-Support-Vector-Machine-(SVM)?">Question: Hard and soft margin Support Vector Machine (SVM)?<a class="anchor-link" href="#Question:-Hard-and-soft-margin-Support-Vector-Machine-(SVM)?">&#182;</a></h4><ol>
+<li>Soft margin is extended version of hard margin SVM.</li>
+<li>Hard margin SVM can work only when data is completely linearly separable without any errors (noise or outliers). In case of errors either the margin is smaller or hard margin SVM fails. On the other hand soft margin SVM was proposed by Vapnik to solve this problem by introducing slack variables.</li>
+<li>As for as their usage is concerned since Soft margin is extended version of hard margin SVM so we use Soft margin SVM.</li>
+</ol>
+<h4 id="Question:-What-is-the-difference-between-SVM-and-logistic-regression?">Question: What is the difference between SVM and logistic regression?<a class="anchor-link" href="#Question:-What-is-the-difference-between-SVM-and-logistic-regression?">&#182;</a></h4><p>In the case of two classes are linearly separable. LR finds any solution that separates the two classes. Hard SVM finds "the" solution among all possible ones that has the maximum margin.
+In case of soft SVM and the classes not being linearly separable. LR finds a hyperplane that corresponds to the minimization of some error. Soft SVM tries to minimize the error (another error) and at the same time trades off that error with the margin via a regularization parameter.
+SVM is a hard classifier but LR is a probabilistic one.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-bias,-variance-trade-off-?">*What is bias, variance trade off ?<a class="anchor-link" href="#*What-is-bias,-variance-trade-off-?">&#182;</a></h3><p><code>Bias:</code>
+“Bias is error introduced in your model due to over simplification of machine learning algorithm.” It can lead to under fitting. When you train your model at that time model makes simplified assumptions to make the target function easier to understand.</p>
+<p>Low bias machine learning algorithms — Decision Trees, k-NN and SVM. High bias machine learning algorithms — Linear Regression, Logistic Regression</p>
+<p><code>Variance:</code>
+“Variance is error introduced in your model due to complex machine learning algorithm, your model learns noise also from the training data set and performs bad on test data set.” It can lead high sensitivity and over fitting.</p>
+<p>Normally, as you increase the complexity of your model, you will see a reduction in error due to lower bias in the model. However, this only happens till a particular point. As you continue to make your model more complex, you end up over-fitting your model and hence your model will start suffering from high variance.</p>
+<p><code>Bias, Variance trade off:</code>
+The goal of any supervised machine learning algorithm is to have low bias and low variance to achieve good prediction performance. The k-nearest neighbours algorithm has low bias and high variance, but the trade-off can be changed by increasing the value of k which increases the number of neighbours that contribute to the prediction and in turn increases the bias of the model. The support vector machine algorithm has low bias and high variance, but the trade-off can be changed by increasing the C parameter that influences the number of violations of the margin allowed in the training data which increases the bias but decreases the variance. There is no escaping the relationship between bias and variance in machine learning. Increasing the bias will decrease the variance. Increasing the variance will decrease the bias.</p>
+<p><img src="https://miro.medium.com/max/547/0*goZnsEUDxSoE3v3N.png" width="400"></p>
+<h4 id="Question:-Comparing-variance-of-decision-trees-and-random-forests">Question: Comparing variance of decision trees and random forests<a class="anchor-link" href="#Question:-Comparing-variance-of-decision-trees-and-random-forests">&#182;</a></h4><p>Decision trees would be worse in variance (higher variance and lower bias) than random forests. A decision tree algorithm works is that the data is split again and again as we go down in the tree, so the actual predictions would be made by fewer and fewer data points. Compared to that, random forests aggregate the decisions of multiple trees, and that too, less-correlated trees through randomization, hence the model generalizes better (=&gt; performs more reliably across different datasets = lower variance).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-are-overfitting-and-underfitting-in-Machine-Learning?">*What are overfitting and underfitting in Machine Learning?<a class="anchor-link" href="#*What-are-overfitting-and-underfitting-in-Machine-Learning?">&#182;</a></h3><p><code>Overfitting</code> occurs when a statistical model or machine learning algorithm captures the noise of the data.  Intuitively, overfitting occurs when the model or the algorithm fits the data too well.  Specifically, overfitting occurs if the model or algorithm shows low bias but high variance.  Overfitting is often a result of an excessively complicated model, and it can be prevented by fitting multiple models and using validation or cross-validation to compare their predictive accuracies on test data.</p>
+<p><code>Underfitting</code> occurs when a statistical model or machine learning algorithm cannot capture the underlying trend of the data.  Intuitively, underfitting occurs when the model or the algorithm does not fit the data well enough.  Specifically, underfitting occurs if the model or algorithm shows low variance but high bias.  Underfitting is often a result of an excessively simple model.</p>
+<h4 id="Question:-How-to-overcome?">Question: How to overcome?<a class="anchor-link" href="#Question:-How-to-overcome?">&#182;</a></h4><p>In my experience with statistics and machine learning, I don’t encounter underfitting very often.  Data sets that are used for predictive modelling nowadays often come with too many predictors, not too few.  Nonetheless, when building any model in machine learning for predictive modelling, use validation or cross-validation to assess predictive accuracy – whether you are trying to avoid overfitting or underfitting.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*How-to-calculate-and-interpret-AUC-of-ROC-curves?">*How to calculate and interpret AUC of ROC curves?<a class="anchor-link" href="#*How-to-calculate-and-interpret-AUC-of-ROC-curves?">&#182;</a></h3><p>AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much model is capable of distinguishing between classes. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s.</p>
+<p>True Positive Rate (TPR) is a synonym for recall and is therefore defined as follows:</p>
+<p>$TPR = \frac{TP} {TP + FN}$</p>
+<p>False Positive Rate (FPR) is defined as follows:</p>
+<p>$FPR = \frac{FP} {FP + TN}$</p>
+<p><code>ROC</code> curve plots TPR vs. FPR at different classification thresholds. Lowering the classification threshold classifies more items as positive, thus increasing both False Positives and True Positives. The following figure shows a typical ROC curve.</p>
+<p><code>AUC</code> stands for "Area under the ROC Curve." That is, AUC measures the entire two-dimensional area underneath the entire ROC curve (think integral calculus) from (0,0) to (1,1).</p>
+<p><img src="https://developers.google.com/machine-learning/crash-course/images/ROCCurve.svg" width="300"></p>
+<h4 id="Question:-Define-Precision-and-Recall.">Question: Define Precision and Recall.<a class="anchor-link" href="#Question:-Define-Precision-and-Recall.">&#182;</a></h4><p><code>Precision</code> is the ratio of several events you can correctly recall to the total number of events you recall (mix of correct and wrong recalls).</p>
+<p>Precision = (True Positive) / (True Positive + False Positive)</p>
+<p><code>Recall</code>is the ratio of a number of events you can recall the number of total events.</p>
+<p>Recall = (True Positive) / (True Positive + False Negative)</p>
+<h4 id="Question:-How-can-it-be-that-the-AUC-is-large-while-the-accuracy-is-low-at-the-same-time?">Question: How can it be that the AUC is large while the accuracy is low at the same time?<a class="anchor-link" href="#Question:-How-can-it-be-that-the-AUC-is-large-while-the-accuracy-is-low-at-the-same-time?">&#182;</a></h4><p>This may happen if your classifier achieves the good performance on the positive class (high AUC) at the cost of a high false negatives rate (or a low number of true negative).</p>
+<h4 id="Question:-Assessing-and-Comparing-Classifier-Performance-with-ROC-Curves">Question: Assessing and Comparing Classifier Performance with ROC Curves<a class="anchor-link" href="#Question:-Assessing-and-Comparing-Classifier-Performance-with-ROC-Curves">&#182;</a></h4><p>One common measure used to compare two or more classification models is to use the area under the ROC curve (AUC) as a way to indirectly assess their performance. In this case a model with a larger AUC is usually interpreted as performing better than a model with a smaller AUC.
+An AUC of less than 0.5 might indicate that something interesting is happening. A very low AUC might indicate that the problem has been set up wrongly, the classifier is finding a relationship in the data which is, essentially, the opposite of that expected. In such a case, inspection of the entire ROC curve might give some clues as to what is going on: have the positives and negatives been mislabelled?</p>
+<h4 id="Question:-What-is-Confusion-Matrix?">Question: What is Confusion Matrix?<a class="anchor-link" href="#Question:-What-is-Confusion-Matrix?">&#182;</a></h4><p>A confusion matrix is a performance measurement technique for Machine learning classification. The confusion matrix visualizes the accuracy of a classifier by comparing the actual and predicted classes. The binary confusion matrix is composed of squares:</p>
+<p><img src="https://www.guru99.com/images/r_programming/032918_0938_DecisionTre2.png" width="500"></p>
+<h4 id="Question:-Why-you-need-Confusion-matrix?">Question: Why you need Confusion matrix?<a class="anchor-link" href="#Question:-Why-you-need-Confusion-matrix?">&#182;</a></h4><ol>
+<li>It shows how any classification model is confused when it makes predictions.</li>
+<li>Confusion matrix not only gives you insight into the errors being made by your classifier but also types of errors that are being made.</li>
+<li>This breakdown helps you to overcomes the limitation of using classification accuracy alone.</li>
+<li>Every column of the confusion matrix represents the instances of that predicted class.</li>
+<li>Each row of the confusion matrix represents the instances of the actual class.</li>
+<li>It provides insight not only the errors which are made by a classifier but also errors that are being made.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*List-regression-and-classifcation-metrics.-Explain-pros/cons,-and-when-to-use-which.">*List regression and classifcation metrics. Explain pros/cons, and when to use which.<a class="anchor-link" href="#*List-regression-and-classifcation-metrics.-Explain-pros/cons,-and-when-to-use-which.">&#182;</a></h3><p><code>Classification</code>:</p>
+<ol>
+<li>Accuracy = (TP+TN)/(TP+FP+FN+TN): measures how often the classifier makes the correct predictions. the ratio between the number of correct predictions and the total number of predictions (the number of data points in the test set)</li>
+<li>Precision = (TP)/(TP+FP): evaluation metric when we want to be very sure of our prediction. </li>
+<li>Confusion matrix: shows a more detailed breakdown of correct and incorrect classifications for each class. Confusion matrix is useful when wanting to understand the distinction between classes, particularly when “the cost of misclassification might differ for the two classes, or one might have a lot more test data of one class than the other.” For example, the consequences of making a false positive or false negative in a cancer diagnosis are different.</li>
+<li>Log-loss: measures the performance of a classification model where the prediction input is a probability value between 0 and 1. A pretty good evaluation metric for binary classifiers and it is sometimes the optimization objective as well in case of Logistic regression and Neural Networks. Use when the output of a classifier is prediction probabilities. It is susceptible in case of imbalanced datasets. You might have to introduce class weights to penalize minority errors more or you may use this after balancing your dataset.</li>
+<li>AUC: one way to summarize the ROC curve into a single number, so that it can be compared easily and automatically. It is said to only be sensitive to rank ordering, and a useful metric even for datasets with highly unbalanced classes.</li>
+</ol>
+<p><a href="https://www.kdnuggets.com/2019/10/5-classification-evaluation-metrics-every-data-scientist-must-know.html">The 5 Classification Evaluation Metrics Every Data Scientist Must Know</a></p>
+<p><code>Regression</code>:</p>
+<ol>
+<li>RMSE: the most commonly used metrics for regression tasks. RSMEs are particularly “sensitive to large outliers. If the regressor performs really badly on a single data point, the average error could be very big” or that “the mean is not robust (to large outliers)”.</li>
+<li>Mean Squared Error: As it squares the differences, it penalizes even a small error which leads to over-estimation of how bad the model is. It is preferred more than other metrics because it is differentiable and hence can be optimized better.</li>
+<li>Mean Absolute Error:  The MAE is more robust to outliers and does not penalize the errors as extremely as mse. MAE is a linear score which means all the individual differences are weighted equally. It is not suitable for applications where you want to pay more attention to the outliers.</li>
+<li>R² Error:The metric helps us to compare our current model with a constant baseline and tells us how much our model is better. </li>
+<li>Adjusted R²: R² suffers from the problem that the scores improve on increasing terms even though the model is not improving which may misguide the researcher. Adjusted R² is always lower than R² as it adjusts for the increasing predictors and only shows improvement if there is a real improvement.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Differences-between-L1-and-L2-regularization?">*Differences between L1 and L2 regularization?<a class="anchor-link" href="#*Differences-between-L1-and-L2-regularization?">&#182;</a></h3><p>Regularization is the mathematical approach to prevent over-fitting.  It accomplishes this by punishing more complex models by adding the regularization term to the model’s loss function.</p>
+<p><code>L1 regularization/Lasso</code> results in binary weights of 0 or 1 for the features in our model and is good for reducing the number of features in a high dimensional data set.  <code>L2 regularization/Ridge regression</code> spreads the error among all the weights and results in almost universally more accurate final models.</p>
+<h4 id="Question:-Why-L1-regularization-can-be-used-for-feature-selection?">Question: Why L1 regularization can be used for feature selection?<a class="anchor-link" href="#Question:-Why-L1-regularization-can-be-used-for-feature-selection?">&#182;</a></h4><p>L1 regularization adds a penalty $\alpha \sum^{n}_{i=1}|\omega_i|$ to the loss function (L1-norm). Since each non-zero coefficient adds to the penalty, it forces weak features to have zero as coefficients. Thus L1 regularization produces sparse solutions, inherently performing feature selection.</p>
+<h4 id="Question:-Does-logistic-regression-with-squared-loss-function-is-non-convex-or-convex?">Question: Does logistic regression with squared loss function is non-convex or convex?<a class="anchor-link" href="#Question:-Does-logistic-regression-with-squared-loss-function-is-non-convex-or-convex?">&#182;</a></h4><p>A prediction function in logistic regression is non-linear (due to sigmoid transform). Squaring this prediction as we do in MSE results in a non-convex function with many local minimums. If our cost function has many local minimums, gradient descent may not find the optimal global minimum. Instead of Mean Squared Error, we use a cost function called Cross-Entropy, also known as Log Loss.</p>
+<h4 id="Question:-How-do-you-select-lambda?">Question: How do you select lambda?<a class="anchor-link" href="#Question:-How-do-you-select-lambda?">&#182;</a></h4><p>In lasso, the penalty is the sum of the absolute values of the coefficients. Lasso shrinks the coefficient estimates towards zero and it has the effect of setting variables exactly equal to zero when lambda is large enough while ridge does not. Hence, much like the best subset selection method, lasso performs variable selection. The tuning parameter lambda is chosen by cross validation. When lambda is small, the result is essentially the least squares estimates. As lambda increases, shrinkage occurs so that variables that are at zero can be thrown away. So, a major advantage of lasso is that it is a combination of both shrinkage and selection of variables. In cases with very large number of features, lasso allow us to efficiently find the sparse model that involve a small subset of the features.</p>
+<p>In ridge regression, we add a penalty by way of a tuning parameter called lambda which is chosen using cross validation. The idea is to make the fit small by making the residual sum or squares small plus adding a shrinkage penalty. The shrinkage penalty is lambda times the sum of squares of the coefficients so coefficients that get too large are penalized. As lambda gets larger, the bias is unchanged but the variance drops. The drawback of ridge is that it doesn’t select variables. It includes all of the variables in the final model</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*What-is-the-difference-between-Bagging-and-Boosting-(and-Stacking)?">*What is the difference between Bagging and Boosting (and Stacking)?<a class="anchor-link" href="#*What-is-the-difference-between-Bagging-and-Boosting-(and-Stacking)?">&#182;</a></h3><p><code>Short answer:</code></p>
+<p>Bagging:</p>
+<ol>
+<li><p>parallel ensemble: each model is built independently</p>
+</li>
+<li><p>aim to decrease variance, not bias</p>
+</li>
+<li><p>suitable for high variance low bias models (complex models)</p>
+</li>
+<li><p>an example of a tree based method is random forest, which develop fully grown trees (note that RF modifies the grown procedure to reduce the correlation between trees)</p>
+</li>
+</ol>
+<p>Boosting:</p>
+<ol>
+<li><p>sequential ensemble: try to add new models that do well where previous models lack</p>
+</li>
+<li><p>aim to decrease bias, not variance</p>
+</li>
+<li><p>suitable for low variance high bias models</p>
+</li>
+<li><p>an example of a tree based method is gradient boosting</p>
+</li>
+</ol>
+<p><code>Long answer:</code></p>
+<p>All three are so-called "meta-algorithms": approaches to combine several machine learning techniques into one predictive model in order to decrease the variance (bagging), bias (boosting) or improving the predictive force (stacking alias ensemble).</p>
+<p>Every algorithm consists of two steps:</p>
+<p>Producing a distribution of simple ML models on subsets of the original data.</p>
+<p>Combining the distribution into one "aggregated" model.</p>
+<p>Here is a short description of all three methods:</p>
+<p>Bagging (stands for Bootstrap Aggregating) is a way to decrease the variance of your prediction by generating additional data for training from your original dataset using combinations with repetitions to produce multisets of the same cardinality/size as your original data. By increasing the size of your training set you can't improve the model predictive force, but just decrease the variance, narrowly tuning the prediction to expected outcome.</p>
+<p>Boosting is a two-step approach, where one first uses subsets of the original data to produce a series of averagely performing models and then "boosts" their performance by combining them together using a particular cost function (=majority vote). Unlike bagging, in the classical boosting the subset creation is not random and depends upon the performance of the previous models: every new subsets contains the elements that were (likely to be) misclassified by previous models.</p>
+<p>Stacking is a similar to boosting: you also apply several models to your original data. The difference here is, however, that you don't have just an empirical formula for your weight function, rather you introduce a meta-level and use another model/approach to estimate the input together with outputs of every model to estimate the weights or, in other words, to determine what models perform well and what badly given these input data.</p>
+<p>Here is a comparison table:</p>
+<p><img src="https://i.stack.imgur.com/RFfqb.png" width="700"></p>
+<h4 id="Question:-Gradient-Boosting-Tree-vs-Random-Forest">Question: Gradient Boosting Tree vs Random Forest<a class="anchor-link" href="#Question:-Gradient-Boosting-Tree-vs-Random-Forest">&#182;</a></h4><p>error = bias + variance</p>
+<p><code>Boosting</code> is based on weak learners (high bias, low variance). In terms of decision trees, weak learners are shallow trees, sometimes even as small as decision stumps (trees with two leaves). Boosting reduces error mainly by reducing bias (and also to some extent variance, by aggregating the output from many models).</p>
+<p><code>Random Forest</code> uses as you said fully grown decision trees (low bias, high variance). It tackles the error reduction task in the opposite way: by reducing variance. The trees are made uncorrelated to maximize the decrease in variance, but the algorithm cannot reduce bias (which is slightly higher than the bias of an individual tree in the forest). Hence the need for large, unpruned trees, so that the bias is initially as low as possible.</p>
+<h4 id="Question:-Explain-Xgboost,-how-it-is-different-from-GBM?">Question: Explain Xgboost, how it is different from GBM?<a class="anchor-link" href="#Question:-Explain-Xgboost,-how-it-is-different-from-GBM?">&#182;</a></h4><p>XGBoost stands for Extreme Gradient Boosting; it is a specific implementation of the Gradient Boosting method which uses more accurate approximations to find the best tree model. It employs a number of nifty tricks that make it exceptionally successful, particularly with structured data. The most important are</p>
+<ol>
+<li><p>computing second-order gradients, i.e. second partial derivatives of the loss function (similar to Newton’s method), which provides more information about the direction of gradients and how to get to the minimum of our loss function. While regular gradient boosting uses the loss function of our base model (e.g. decision tree) as a proxy for minimizing the error of the overall model, XGBoost uses the 2nd order derivative as an approximation.</p>
+</li>
+<li><p>And advanced regularization (L1 &amp; L2), which improves model generalization.</p>
+</li>
+</ol>
+<p>XGBoost has additional advantages: training is very fast and can be parallelized / distributed across clusters.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Autoencoders">*Autoencoders<a class="anchor-link" href="#*Autoencoders">&#182;</a></h3><p>Autoencoders (AE) are neural networks that aims to copy their inputs to their outputs. They work by compressing the input into a latent-space representation, and then reconstructing the output from this representation. This kind of network is composed of two parts :</p>
+<p><code>Encoder</code>: This is the part of the network that compresses the input into a latent-space representation. It can be represented by an encoding function h=f(x).</p>
+<p><code>Decoder</code>: This part aims to reconstruct the input from the latent space representation. It can be represented by a decoding function r=g(h).</p>
+<p><img src="https://miro.medium.com/max/1248/1*V_YtxTFUqDrmmu2JqMZ-rA.png" width="700"></p>
+<h4 id="Question:-What-are-autoencoders-used-for-?">Question: What are autoencoders used for ?<a class="anchor-link" href="#Question:-What-are-autoencoders-used-for-?">&#182;</a></h4><p>Today data denoising and dimensionality reduction for data visualization are considered as two main interesting practical applications of autoencoders. With appropriate dimensionality and sparsity constraints, autoencoders can learn data projections that are more interesting than PCA or other basic techniques.</p>
+<p>Autoencoders are learned automatically from data examples. It means that it is easy to train specialized instances of the algorithm that will perform well on a specific type of input and that it does not require any new engineering, only the appropriate training data.</p>
+<p>However, autoencoders will do a poor job for image compression. As the autoencoder is trained on a given set of data, it will achieve reasonable compression results on data similar to the training set used but will be poor general-purpose image compressors. Compression techniques like JPEG will do vastly better.</p>
+<p>Autoencoders are trained to preserve as much information as possible when an input is run through the encoder and then the decoder, but are also trained to make the new representation have various nice properties. Different kinds of autoencoders aim to achieve different kinds of properties. We will focus on four types on autoencoders.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Recommendation-System">Recommendation System<a class="anchor-link" href="#Recommendation-System">&#182;</a></h3><h4 id="Question:-How-Is-Amazon-able-to-recommend-other-things-to-buy?-How-does-the-recommendation-engine-work?">Question: How Is Amazon able to recommend other things to buy? How does the recommendation engine work?<a class="anchor-link" href="#Question:-How-Is-Amazon-able-to-recommend-other-things-to-buy?-How-does-the-recommendation-engine-work?">&#182;</a></h4><p>Once a user buys something from Amazon, Amazon stores that purchase data for future reference and finds products that are most likely also to be bought, it is possible because of the Association algorithm, which can identify patterns in a given dataset.</p>
+<h4 id="Question:-What-is-a-recommendation-system?">Question: What is a recommendation system?<a class="anchor-link" href="#Question:-What-is-a-recommendation-system?">&#182;</a></h4><p>Anyone who has used Spotify or shopped at Amazon will recognize a recommendation system: It’s an information filtering system that predicts what a user might want to hear or see based on choice patterns provided by the user.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="*Design-Problems">*Design Problems<a class="anchor-link" href="#*Design-Problems">&#182;</a></h3><h4 id="Question:-How-do-you-design-an-email-spam-filter?">Question: How do you design an email spam filter?<a class="anchor-link" href="#Question:-How-do-you-design-an-email-spam-filter?">&#182;</a></h4><p>Building a spam filter involves the following process: The email spam filter will be fed with thousands of emails. Each of these emails already has a label: ‘spam’ or ‘not spam.’. The supervised machine learning algorithm will then determine which type of emails are being marked as spam based on spam words like the lottery, free offer, no money, full refund, etc.The next time an email is about to hit your inbox, the spam filter will use statistical analysis and algorithms like Decision Trees and SVM to determine how likely the email is spam. If the likelihood is high, it will label it as spam, and the email won’t hit your inbox. Based on the accuracy of each model, we will use the algorithm with the highest accuracy after testing all the models.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="*Using-Survival-Analysis-to-Model-Time-to-Default">*<a href="https://www.dataminingapps.com/2016/01/using-survival-analysis-to-model-time-to-default/">Using Survival Analysis to Model Time to Default</a><a class="anchor-link" href="#*Using-Survival-Analysis-to-Model-Time-to-Default">&#182;</a></h4>
+</div>
+</div>
+</div>
+    </div>
+  </div>
+</body>
+
+ 
+
+
+</html>
