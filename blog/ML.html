@@ -108,17 +108,12 @@
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="*How-to-handle-imbalanced-data-in-Machine-Learning?">*How to handle imbalanced data in Machine Learning?<a class="anchor-link" href="#*How-to-handle-imbalanced-data-in-Machine-Learning?">&#182;</a></h3><p><code>Imbalanced data</code> typically refers to a problem with classification problems where the classes are not represented equally. For example, you may have a 2-class (binary) classification problem with 100 instances (rows). A total of 80 instances are labeled with Class-1 and the remaining 20 instances are labeled with Class-2. This is an imbalanced dataset and the ratio of Class-1 to Class-2 instances is 80:20 or more concisely 4:1.</p>
 <ol>
-<li>Collect More Data</li>
-<li>Try Changing Your Performance Metric</li>
-<li>Try Resampling Your Dataset</li>
-<li>Try Generate Synthetic Samples: generate synthetic samples is to randomly sample the attributes from instances in the minority class.</li>
-<li>Try Different Algorithms: spot-checking a variety of different types of algorithms on a given problem.</li>
-<li>Try Penalized Models: Penalized classification imposes an additional cost on the model for making classification mistakes on the minority class during training. These penalties can bias the model to pay more attention to the minority class.</li>
+<li>Use the right evaluation metrics: precision and recall cannot reflect the performance of model, AUC or False postive rate are good choices</li>
+<li>Try Resampling Your Dataset: upsampling or upsampling</li>
+<li> Adjust objective function: assign large weights to samples from minority class or add a regularizer to penalize the objective function if the predicted probilities for minority class are low.</li>
+<li> Cluster the aboundant class into r groups. For each group, only the center of  cluster is kepted. The model is only trained on centers of those clusters and minority class.<\li>
 </ol>
-<p>"Decompose your larger class into smaller number of other classes…</p>
-<p>…use a One Class Classifier… (e.g. treat like outlier detection)</p>
-<p>…resampling the unbalanced training set into not one balanced set, but several. Running an ensemble of classifiers on these sets could produce a much better result than one classifier alone"</p>
-
+<p> <strong>Note</strong>: We also can further build ensambled model on re-sampled data and also different sampling ratio can be try. </p>
 </div>
 </div>
 </div>
