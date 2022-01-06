@@ -10,6 +10,8 @@ I obtained my Ph.D. degree in  [Computer Science](https://www.cse.uconn.edu/) fr
 ![Research areas](/assets/images/Picture1.png)
 
 ## News
+* (Jan 2022) Reviewer for ICML 2022
+* 
 * (Oct 2021) Invited to serve as a PC for IJCAI 2022
 
 * (Sep 2021) Reviewer for ICLR 2022
