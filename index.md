@@ -10,6 +10,8 @@ I obtained my Ph.D. degree in  [Computer Science](https://www.cse.uconn.edu/) fr
 ![Research areas](/assets/images/Picture1.png)
 
 ## News
+* (Jan 2022) One paper is accepted by Neurocomputing 
+
 * (Jan 2022) Reviewer for ICML 2022
 
 * (Oct 2021) Invited to serve as a PC for IJCAI 2022
@@ -35,7 +37,7 @@ I obtained my Ph.D. degree in  [Computer Science](https://www.cse.uconn.edu/) fr
 * (Oct 2020) Invited to serve as a reviewer for AAAI 2021
 
 ## Courses
-* (Oct 2021 - Now) I am studying Reinforcement Learning via [Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures)
+* (Oct 2021 - Dec 2021) I am studying Reinforcement Learning via [Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures)
 
 ## Contact
 Email: guannan.liang AT uconn.edu
