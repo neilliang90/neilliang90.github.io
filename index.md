@@ -10,6 +10,8 @@ I am an Applied Scientist II at Amazon. My duty is to develope ML/AI solutions t
 ![Research areas](/assets/images/Picture1.png)
 
 ## News
+* (May 2021)  Reviewer for NeurIPS 2022
+
 * (Jan 2022) One paper is accepted by Neurocomputing 
 
 * (Jan 2022) Reviewer for ICML 2022
